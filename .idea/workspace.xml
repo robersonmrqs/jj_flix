@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c93ca09b-62cc-4b4f-bfc7-09161d7135a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/media/thumb_videos/thumb_escola.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/video/templates/homepage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg_jj_flix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/jj_flix.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jj_flix/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jj_flix/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jj_flix/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/jj_flix/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/video/templates/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/views.py" afterDir="false" />
     </list>
