@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c93ca09b-62cc-4b4f-bfc7-09161d7135a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/jj_flix/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/jj_flix/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
