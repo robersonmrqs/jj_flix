@@ -1,4 +1,3 @@
-- Homepage
 - Fazer login e criar conta (usuário e autenticação)
     - Email
     - Username
@@ -13,8 +12,9 @@ Filmes/Séries
     - Categoria
     - Quantidade de views
     - Data de criação
-    - Episódios
-        - Videos (link do vídeo)
-        - Título
+
+- Episódios
+    - Videos (link do vídeo)
+    - Título
 
 Barra de Pesquisa
