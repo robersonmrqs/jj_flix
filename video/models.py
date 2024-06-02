@@ -17,3 +17,11 @@ class Video(models.Model):
 
     def __str__(self):
         return self.titulo
+
+class Episodio(models.Model):
+    filme = models.ForeignKey('Video', related_name = 'episodios', on_delete = models.CASCADE)
+    titulo = models.CharField(max_length = 100)
+    video = models.FileField(upload_to = 'videos')
+
+    def __str__(self):
+        return self.filme.titulo + " - " + self.titulo
