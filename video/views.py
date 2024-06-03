@@ -23,7 +23,6 @@ class HomeVideos(ListView):
     template_name = 'homevideos.html'
     model = Video
 
-
 class DetalhesVideo(DetailView):
     template_name = 'detalhesvideo.html'
     model = Video
