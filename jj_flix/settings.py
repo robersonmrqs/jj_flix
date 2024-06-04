@@ -48,26 +48,17 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'jj_flix.urls'
 
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-                'video.context.lista_videos_recentes',
-                'video.context.lista_videos_emalta',
-            ],
-        },
-    },
-]
+TEMPLATES = [{'BACKEND': 'django.template.backends.django.DjangoTemplates',
+              'DIRS': ['templates'],
+              'APP_DIRS': True,
+              'OPTIONS': {'context_processors': ['django.template.context_processors.debug',
+                                                 'django.template.context_processors.request',
+                                                 'django.contrib.auth.context_processors.auth',
+                                                 'django.contrib.messages.context_processors.messages',
+                                                 'video.context.lista_videos_recentes',
+                                                 'video.context.lista_videos_emalta']}}]
 
 WSGI_APPLICATION = 'jj_flix.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -79,9 +70,10 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
+
+AUTH_USER_MODEL = 'video.Usuario'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -98,7 +90,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
@@ -109,7 +100,6 @@ TIME_ZONE = 'America/Sao_Paulo'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/

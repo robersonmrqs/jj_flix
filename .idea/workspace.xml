@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c93ca09b-62cc-4b4f-bfc7-09161d7135a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/video/context.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/templates/pesquisa.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jj_flix/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/jj_flix/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/templates/detalhesvideo.html" beforeDir="false" afterPath="$PROJECT_DIR$/video/templates/detalhesvideo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/migrations/0002_episodio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
