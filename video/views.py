@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect, reverse
-from .models import Video
-from django.views.generic import TemplateView, ListView, DetailView, UpdateView
+from .models import Video, Usuario
+from .forms import CriaContaForm, FormHomePage
+from django.views.generic import TemplateView, ListView, DetailView, FormView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-class HomePage(TemplateView):
+class HomePage(FormView):
     template_name = 'homepage.html'
+    form_class = FormHomePage
 
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
@@ -61,3 +63,14 @@ class EditarPerfil(LoginRequiredMixin, UpdateView):
 
     def get_success_url(self):
         return reverse('video:homevideos')
+
+class CriarConta(FormView):
+    template_name = 'criarconta.html'
+    form_class = CriaContaForm
+
+    def form_valid(self, form):
+        form.save()
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse('video:login')

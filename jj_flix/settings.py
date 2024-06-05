@@ -34,7 +34,9 @@ INSTALLED_APPS = ['django.contrib.admin',
                   'django.contrib.sessions',
                   'django.contrib.messages',
                   'django.contrib.staticfiles',
-                  'video']
+                  'video',
+                  'crispy_forms',
+                  'crispy_bootstrap5']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -120,3 +122,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = 'video:homevideos'
 
 LOGIN_URL = 'video:login'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
