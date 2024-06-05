@@ -2,7 +2,6 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import AbstractUser
 
-
 LISTA_CATEGORIAS = (('JOCA', 'Joca'),
                     ('JUAN', 'Juan'),
                     ('EMDUPLA', 'Em Dupla'),
@@ -24,6 +23,7 @@ class Episodio(models.Model):
     filme = models.ForeignKey('Video', related_name = 'episodios', on_delete = models.CASCADE)
     titulo = models.CharField(max_length = 100)
     video = models.FileField(upload_to = 'videos')
+    thumbnail = models.ImageField(upload_to = 'thumb_videos')
 
     def __str__(self):
         return self.filme.titulo + " - " + self.titulo

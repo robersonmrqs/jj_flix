@@ -20,22 +20,28 @@
   
         <section class = 'bg-primary_black flex justify-center py-10'>
             <div class = 'p-8 w-10/12 relative'>
-                <h2 class = 'text-gray-200 text-3xl font-medium mt-10'>
+                <h2 class = 'text-gray-200 text-3xl font-medium'>
                     Episódios
                 </h2>
-                <ul class = 'list-none'>
-                {% for episodio in object.episodios.all %}
-                    <li class = 'mb-4'>
-                        <a href = '{{ episodio.video.url }}' target = '_blank'>
-                            <span class = 'text-lg text-gray-200 font-medium'>
-                                Episódio {{ forloop.counter }}: {{ episodio.titulo }}
+                <br />
+                <ul class = 'episodios-list'>
+                    {% for episodio in object.episodios.all %}
+                        <li class = 'episodio-item flex items-center'>
+                            <span class = 'episodio-contador mr-2'>
+                                Episódio {{ forloop.counter }}
                             </span>
-                        </a>
-                    </li>
-                {% endfor %}
+                            <h3 class = 'episodio-title'>
+                                {{ episodio.titulo }}
+                            </h3>
+                            &nbsp; - &nbsp;
+                            <a href = '{{ episodio.video.url }}' target = '_blank'>
+                                <img src = '{{ episodio.thumbnail.url }}' alt = '{{ episodio.titulo }}' class = 'episodio-thumbnail h-20 w-20 object-cover'/>
+                            </a>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
-        </section>
+          </section>
   
         <section class = 'bg-primary_black flex justify-center py-10'>
             <div class = 'p-8 w-10/12 relative'>
