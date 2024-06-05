@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from .models import Video
-from django.views.generic import TemplateView, ListView, DetailView
+from django.views.generic import TemplateView, ListView, DetailView, UpdateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 class HomePage(TemplateView):
     template_name = 'homepage.html'
@@ -19,11 +20,11 @@ class HomePage(TemplateView):
         else:
             return reverse('video:criarconta')
 
-class HomeVideos(ListView):
+class HomeVideos(LoginRequiredMixin, ListView):
     template_name = 'homevideos.html'
     model = Video
 
-class DetalhesVideo(DetailView):
+class DetalhesVideo(LoginRequiredMixin, DetailView):
     template_name = 'detalhesvideo.html'
     model = Video
 
@@ -41,7 +42,7 @@ class DetalhesVideo(DetailView):
         context['videos_relacionados'] = videos_relacionados
         return context
 
-class PesquisaVideo(ListView):
+class PesquisaVideo(LoginRequiredMixin, ListView):
     template_name = 'pesquisa.html'
     model = Video
 
@@ -52,3 +53,11 @@ class PesquisaVideo(ListView):
             return object_list
         else:
             return None
+
+class EditarPerfil(LoginRequiredMixin, UpdateView):
+    template_name = 'editarperfil.html'
+    model = Usuario
+    fields = ['first_name', 'last_name', 'email']
+
+    def get_success_url(self):
+        return reverse('video:homevideos')
