@@ -1,0 +1,1 @@
+web: python manage.py migrate && gunicorn jj_flix.wsgi --log-file -
