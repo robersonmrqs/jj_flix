@@ -22,7 +22,7 @@ class Video(models.Model):
 class Episodio(models.Model):
     filme = models.ForeignKey('Video', related_name = 'episodios', on_delete = models.CASCADE)
     titulo = models.CharField(max_length = 100)
-    video = models.FileField(upload_to = 'videos')
+    video = models.URLField()
     thumbnail = models.ImageField(upload_to = 'thumb_videos')
 
     def __str__(self):
